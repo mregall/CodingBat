@@ -13,6 +13,13 @@ public class Warmup_Util {
         return !weekday || vacation;
     }
 
+    public int sumDouble(int a, int b) {
+        if(a != b){
+            return a+b;
+        }
+        return (a+b)*2;
+    }
+
     public int diff21(int n) {
         if(n <= 21){
             return 21-n;
@@ -34,6 +41,73 @@ public class Warmup_Util {
             return true;
         }else return n >= 190 && n <= 210;
     }
+
+    public boolean posNeg(int a, int b, boolean negative) {
+        if (negative){
+            return (a<0 && b<0);
+        }else{
+            return((a<0 && b>0)||(a>0 && b<0));
+        }}
+
+    public String notString(String str) {
+        if(str.length() >= 3 && str.substring(0,3).equals("not")){
+            return str;
+        }
+        return "not " + str;
+    }
+
+    public String missingChar(String str, int n) {
+        String str2 = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (i==n){
+                continue;
+            }
+            str2 += str.charAt(i);
+        } return str2;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
