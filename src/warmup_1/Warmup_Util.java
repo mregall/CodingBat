@@ -1,8 +1,13 @@
 package warmup_1;
 
-public class Warmup_Util {
+public class Warmup_Util {  
 
 
+    public class MonkeyTrouble {
+    public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+        return (!aSmile || bSmile) && (aSmile || !bSmile);
+    }
+        
     public int diff21(int n) {
         if(n <= 21){
             return 21-n;
