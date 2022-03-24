@@ -3,6 +3,10 @@ package warmup_1;
 public class Warmup_Util {
 
 
+    public boolean sleepIn(boolean weekday, boolean vacation) {
+        return !weekday || vacation;
+    }
+
     public int diff21(int n) {
         if(n <= 21){
             return 21-n;
