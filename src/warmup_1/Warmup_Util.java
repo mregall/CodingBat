@@ -3,6 +3,11 @@ package warmup_1;
 public class Warmup_Util {
 
 
+    public class MonkeyTrouble {
+    public boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
+        return (!aSmile || bSmile) && (aSmile || !bSmile);
+    }
+
     public boolean sleepIn(boolean weekday, boolean vacation) {
         return !weekday || vacation;
     }
