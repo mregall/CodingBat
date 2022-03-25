@@ -66,6 +66,24 @@ public class Warmup_Util {
         } return str2;
     }
 
+    public String front3(String str) {
+       if (str.length() >3){
+           str = str.substring(0,3);
+       }
+       return str + str + str;
+    }
+
+    public String backAround(String str){
+        String last = str.substring(str.length() - 1);
+        return last + str + last;
+    }
+
+    public boolean or35(int n) {
+        return (n % 3 == 0 || n % 5 == 0);
+    }
+
+
+
 
 
 
