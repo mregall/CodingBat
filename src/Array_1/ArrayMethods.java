@@ -99,10 +99,13 @@ public class ArrayMethods {
         }
         return nums;
     }
-    public int caughtSpeeding(int speed, boolean isBirthday) {
-        return 0;
+
+    public int[] biggerTwo(int[] a, int[] b) {
+        return a;
 
     }
+
+
 
 }
 
