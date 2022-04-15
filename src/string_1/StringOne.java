@@ -46,5 +46,20 @@ public class StringOne {
         }
         return false;
     }
+
+    public String middleTwo(String str) {
+        int mid = str.length()/2;
+        return str.substring(mid-1,mid+1);
+    }
+
+    public boolean endsLy(String str) {
+      return ((str.length()>1) && (str.substring(str.length() - 2).equals("ly")));
+    }
+
+    public String nTwice(String str, int n) {
+        return str.substring(0,n) + str.substring(str.length()-n);
+
+    }
+
 }
 
