@@ -1,5 +1,7 @@
 package dates;
 
+import java.nio.charset.StandardCharsets;
+
 public class April17 {
 
     //one
@@ -39,4 +41,107 @@ public class April17 {
         }
         return str;
     }
+
+    //five
+    public String seeColor(String str) {
+        if (str.startsWith("red")) return "red";
+        if (str.startsWith("blue")) return "blue";
+        return "";
+    }
+
+    //six
+    public boolean frontAgain(String str) {
+        if (str.length()<2) return false;
+        String ending = str.substring(str.length()-2);
+        return str.substring(0, 2).equals(ending);
+    }
+
+    //seven
+    public String minCat(String a, String b) {
+        if (a.length()==b.length()) return a+b;
+        if (a.length()>b.length()){
+            int a2 = a.length()-b.length();
+            return a.substring(a2,a.length())+b;
+        }
+        else {
+            int b2 = b.length()-a.length();
+            return a+b.substring(b2, b.length());
+        }
+    }
+
+    //eight
+    public String extraFront(String str) {
+        if (str.length()==1) return str+str+str;
+        if (str.length()>1) {
+            String st = str.substring(0,2);
+            return st+st+st;
+        }
+        return "";
+    }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
