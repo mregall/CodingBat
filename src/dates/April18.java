@@ -91,7 +91,7 @@ public class April18 {
 
     //nine
     public boolean love6(int a, int b) {
-        return (a+b ==6 || a == 6 || b == 6 || Math.abs(a-b)==6);
+        return (a+b ==6 || a == 6 || b == 6 || Math.abs(a-b) == 6);
     }
 
     //ten
@@ -104,6 +104,48 @@ public class April18 {
     }
 
     //eleven
+    public boolean specialEleven(int n) {
+       return (n % 11 == 0 || (n-1) % 11 == 0);
+    }
+
+    //twelve
+    public boolean more20(int n) {
+        if (n<10) return false;
+        return (n-1) % 20 == 0 || (n-2) % 20 == 0;
+    } // return (n % 20) == 1 || (n % 20) == 2;
+
+    //thirteen
+    public boolean old35(int n) {
+        if (n % 3 == 0 & n % 5 == 0) return false;
+        return n % 3 == 0 || n % 5 == 0;
+    }
+
+    //fourteen
+    public boolean less20(int n) {
+      return ((n+1) % 20 == 0 || (n+2) % 20 == 0);
+    }
+
+    //fifteen
+    public boolean nearTen(int num) {
+        return true;
+
+
+    }
+
+    public static void main(String[] args) {
+        String str = "This is a sample string.".replace('s', 'x');
+        System.out.println(str);
+        String str2 = "Testing method usage.".concat(str);
+        System.out.println(str.concat(str2));
+        System.out.println(str);
+        System.out.println(str2);
+
+        String toSplit = "I'm going to cut you up.";
+        double d = 3.55;
+
+        System.out.println(Math.rint(d));
+    }
+
 
 }
 
