@@ -125,12 +125,7 @@ public class April18 {
       return ((n+1) % 20 == 0 || (n+2) % 20 == 0);
     }
 
-    //fifteen
-    public boolean nearTen(int num) {
-        return true;
 
-
-    }
 
     public static void main(String[] args) {
         String str = "This is a sample string.".replace('s', 'x');
