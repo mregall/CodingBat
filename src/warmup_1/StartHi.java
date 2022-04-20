@@ -3,7 +3,7 @@ package warmup_1;
 public class StartHi {
     public boolean startHi(String str) {
         if(str.length() >= 2){
-            return str.substring(0,2).equals("hi");
+            return str.startsWith("hi");
         }
         return false;
     }
@@ -125,7 +125,7 @@ public class StartHi {
         if (str.length() <3) return str.toUpperCase();
         int lastThree = str.length()-3;
         String begin = str.substring(0, lastThree);
-        String end = str.substring(lastThree, str.length());
+        String end = str.substring(lastThree);
         return begin + end.toUpperCase();
     }
 

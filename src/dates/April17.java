@@ -38,7 +38,7 @@ public class April17 {
     //four
     public String lastTwo(String str) {
         if (str.length()>=2){
-            String last = str.substring(str.length()-1)+str.substring(str.length()-2,str.length()-1);
+            String last = str.substring(str.length()-1)+str.charAt(str.length()-2);
             return str.substring(0,str.length()-2)+last;
         }
         return str;
@@ -63,11 +63,11 @@ public class April17 {
         if (a.length()==b.length()) return a+b;
         if (a.length()>b.length()){
             int a2 = a.length()-b.length();
-            return a.substring(a2,a.length())+b;
+            return a.substring(a2)+b;
         }
         else {
             int b2 = b.length()-a.length();
-            return a+b.substring(b2, b.length());
+            return a+b.substring(b2);
         }
     }
 

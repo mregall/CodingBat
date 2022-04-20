@@ -34,7 +34,7 @@ public class April18 {
             if (word.length()>1) return c+str.substring(1,n);
         }
         return word.substring(0,1);*/
-        if(str.length()>=word.length() && str.substring(1,word.length()).equals(word.substring(1,word.length())))
+        if(str.length()>=word.length() && str.substring(1,word.length()).equals(word.substring(1)))
             return str.substring(0,word.length());
         else return "";
     }

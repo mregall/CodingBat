@@ -57,7 +57,7 @@ public class April16 {
     public boolean hasBad(String str) {
         if(str.length()<3) {
             return false;}
-        return str.substring(0).startsWith("bad") || str.substring(1).startsWith("bad");
+        return str.startsWith("bad") || str.substring(1).startsWith("bad");
     }
 
 

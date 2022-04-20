@@ -42,7 +42,7 @@ public class StringOne {
 
     public static boolean sameFirstLast(int[] nums) {
         if (nums.length>=1){
-            if (nums[0] == nums[nums.length-1]) return true;
+            return nums[0] == nums[nums.length - 1];
         }
         return false;
     }
@@ -53,7 +53,7 @@ public class StringOne {
     }
 
     public boolean endsLy(String str) {
-      return ((str.length()>1) && (str.substring(str.length() - 2).equals("ly")));
+      return ((str.length()>1) && (str.endsWith("ly")));
     }
 
     public String nTwice(String str, int n) {

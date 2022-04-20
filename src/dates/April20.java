@@ -1,6 +1,7 @@
 package dates;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Locale;
 
 public class April20 {
 
@@ -17,8 +18,7 @@ public class April20 {
         int max = Math.max(a,Math.max(b,c));
         int min = Math.min(a,Math.min(b,c));
         int dif = max - min;
-        if (dif >= 10) return true;
-        else return false;
+        return dif >= 10;
 
         //return (Math.abs(a - b) >= 10 || Math.abs(b - c) >= 10 || Math.abs(a - c) >= 10);
     }
@@ -128,8 +128,72 @@ public class April20 {
 
     //thirteen
     public int countCode(String str) {
-
+        int count = 0;
+        for (int i = 0; i < str.length() - 3; i++) {
+            if (str.charAt(i) == 'c' && str.charAt(i + 1) == 'o' && str.charAt(i + 3) == 'e') {
+                count++;
+            }
+            }
+        return count;
     }
+
+    //fourteen
+    public boolean endOther(String a, String b) {
+        a = a.toLowerCase();
+        int lenA = a.length();
+        b = b.toLowerCase();
+        int lenB = b.length();
+        return a.endsWith(b) || b.endsWith(a);
+    }
+
+            /*
+            Return true if the given string contains an appearance of "xyz" where the xyz is not directly preceeded by a period (.). So "xxyz" counts but "x.xyz" does not.
+             */
+    //fifteen
+    //there are a lot of solutions but this is my favorite.
+    public boolean xyzThere(String str) {
+        if (str.startsWith("xyz"))return true;
+        for(int i = 1; i < str.length()-2;i++){
+            if(str.startsWith("xyz", i) && str.charAt(i-1) != '.')
+                return true;
+        }
+        return false;
+    }
+
+    //sixteen
+    public boolean bobThere(String str) {
+        for (int i = 0; i < str.length() - 2; i++) {
+           if (str.charAt(i)=='b' && str.charAt(i+2)=='b'){
+               return true;
+           }
+        }
+        return false;
+    }
+
+    //seventeen
+    public boolean xyBalance(String str) {
+            /*if (str.contains("x") && !str.contains("y")) return false;
+            if (str.contains("y") && !str.contains("x")) return true;
+            if (str.contains("y")){
+                int n = str.lastIndexOf("y");
+                for (int i = n; i < str.length(); i++) {
+                    if (str.charAt(i) == 'x'){
+                        return false;
+                    }
+                }
+            }
+            return false;*/
+        return (str.indexOf('x')==-1) || str.lastIndexOf('x') < str.lastIndexOf('y');
+        //if there's no x then true, if there's a y after the last x then true, else false
+        //damn!
+    }
+
+    //eighteen
+    public String mixString(String a, String b) {
+        return "";
+    }
+
+
 
 
 

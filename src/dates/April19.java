@@ -77,12 +77,6 @@ public class April19 {
        }
        return (a<b && b<c);
     }
-
-    //ten
-    public boolean lastDigit(int a, int b, int c) {
-        return true;
-    }
-
 }
 
 

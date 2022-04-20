@@ -50,7 +50,7 @@ public class Warmup_Util {
         }}
 
     public String notString(String str) {
-        if(str.length() >= 3 && str.substring(0,3).equals("not")){
+        if(str.length() >= 3 && str.startsWith("not")){
             return str;
         }
         return "not " + str;
