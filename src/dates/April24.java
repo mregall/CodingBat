@@ -31,9 +31,4 @@ public class April24 {
         }
         return numerator/denominator;
     }
-
-    public int sum13(int[] nums) {
-        if (nums.length == 0) return 0;
-        return -1;
-    }
 }
